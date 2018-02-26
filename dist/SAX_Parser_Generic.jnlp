@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SAX_Parser_Generic.jnlp">
+  <information>
+    <title>SAX_Parser_Generic</title>
+    <vendor>GaoFan</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SAX_Parser_Generic.jar" size="7093" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="SAX_Parser_Generic" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="sax_parser_generic.SAX_Parser_Generic"  name="SAX_Parser_Generic" />
+  <update check="always"/>
+</jnlp>
