@@ -43,29 +43,20 @@ public class FXMLDocumentController implements Initializable {
                   List<List<String>> list=new ArrayList();
                   list=XMLLoader.load(file);
                   Iterator<List<String>> out=list.iterator();
+                  
                   while(out.hasNext()){
+                      
                       //List<String> node= new ArrayList<>();
                       List<String> node=out.next();
                       for(String line:node){
-                          //textArea.appendText(line+"\n");
-                          textArea.appendText(line);
-                          //textArea.appendText("-------------------------\n");
+                          //textArea.appendText("-------------------------------------\n");
+                          textArea.appendText(line+"\n");
+                          //textArea.appendText(line);
                           
                       }
-                      //textArea.appendText("-------------------------\n");
+                      //textArea.appendText("-------------------------------------\n");
                   }
-//                Course course = CourseXMLLoader.load(file);
-//                ArrayList<Student> students = course.getStudents();
-//                for (Student student : students) {
-//                    textArea.appendText(Integer.toString(student.getId()) + "\n");
-//                    textArea.appendText(student.getPawprint() + "\n");
-//                    textArea.appendText(student.getFirstName() + "\n");
-//                    textArea.appendText(student.getLastName() + "\n");
-//                    textArea.appendText(Double.toString(student.getGrade()) + "\n");
-//                    textArea.appendText("-------------------------\n");
-//                }
-                
-                
+                  //textArea.appendText("-------------------------------------\n");
             } catch (Exception ex) {
                 displayExceptionAlert("Exception parsing XML file.", ex);
             }

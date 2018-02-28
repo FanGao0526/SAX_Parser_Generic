@@ -74,7 +74,10 @@ public class XMLLoader {
             @Override
             public void characters(char[] ch, int start, int length) throws SAXException {
                   String tmp=new String(ch, start, length);
-                  node.add(tmp);
+                  if(tmp!=null){
+                     node.add(tmp); 
+                  }
+                  
             }
                 
             };
